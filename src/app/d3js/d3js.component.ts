@@ -115,8 +115,8 @@ initsvg(){
 
     this.xlabel=this.g.append("text")
                     .attr("class","x axis-label")
-                    .attr("x", 400)
-                    .attr("y", 450)
+                    .attr("x", 190)
+                    .attr("y", 330)
                     .attr("font-size" , "20px")
                     .attr("text-anchor", "middle")
                     .text("month"); 
