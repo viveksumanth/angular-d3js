@@ -130,7 +130,6 @@ initsvg(){
     this.bardata.exit().remove()
 
     this.bardata
-
       .attr('x',  (d) => this.x(d.month))
       .attr('y', (d) => this.y(d[this.value]))
       .attr('width', this.x.bandwidth)
@@ -142,6 +141,7 @@ initsvg(){
     this.bardata
       .enter()
       .append("rect")
+      .attr("class", "bar")
       .attr('x',  (d) => this.x(d.month))
       .attr('y', (d) => this.y(d[this.value]))
       .attr('width', this.x.bandwidth)
