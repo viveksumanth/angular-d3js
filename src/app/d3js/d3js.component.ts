@@ -130,11 +130,12 @@ initsvg(){
     this.bardata.exit().remove()
 
     this.bardata
+      .attr("class", "bar")
       .attr('x',  (d) => this.x(d.month))
       .attr('y', (d) => this.y(d[this.value]))
       .attr('width', this.x.bandwidth)
       .attr('height', (d) => this.height - this.y(d[this.value]) )
-      .attr('fill','blue')
+      .attr('fill','grey')
     console.log(this.value)
 
 
